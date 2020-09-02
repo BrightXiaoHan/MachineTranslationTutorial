@@ -29,3 +29,7 @@ TODO
 ## 参加WMT
 
 TODO
+
+## 学习资料及相关资源
+
+TODO
