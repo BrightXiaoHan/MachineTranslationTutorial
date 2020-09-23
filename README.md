@@ -7,8 +7,8 @@
 [数据集下载](tutorials/Chapter1/数据集下载.md)
 
 ## Chapter2：数据准备与预处理篇
-
-TODO
+- [中文分词](tutorials/Chapter2/ChineseTokenizer.ipynb)
+- [英文分词](tutorials/Chapter2/EnglishTokenizer.ipynb)
 
 ## Chapter3：模型篇
 
