@@ -80,6 +80,8 @@
 
 
 ```python
+import re
+
 NORMALIZE_UNICODE = [ # lines 37 - 50
         (u'„', r'"'),
         (u'“', r'"'),
@@ -147,20 +149,7 @@ for regx, sub in REPLACE_UNICODE_PUNCTUATION:
 print(text)
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-1-7fc3e223095e> in <module>
-         58 text = "０《１２３》 ４５６％ 【７８９】…"
-         59 for regx, sub in NORMALIZE_UNICODE:
-    ---> 60     text = re.sub(regx, sub, text)
-         61 
-         62 for regx, sub in REPLACE_UNICODE_PUNCTUATION:
-
-
-    NameError: name 're' is not defined
+    0"123" 456% [789]...
 
 
 ## 去除额外的空格
@@ -199,6 +188,9 @@ for regx, sub in EXTRA_WHITESPACE:
     text = re.sub(regx, sub, text)
 print(text)
 ```
+
+    The United States in 1805 (color map) _Facing_ 193
+
 
 ## 去除不间断空格（Non-breaking space）
 什么是不间断空格呢？在unicode中使用`\u00A0`标识不间断空格。英文写作的时候，我们写的一些词组为了避免他们分开在两行导致人们阅读的时候看不懂，就要把它们写在一起，就用到了不间断空格。这里举个例子来说明。
@@ -251,6 +243,9 @@ for regx, sub in NORM_NUM:
     
 print(text)
 ```
+
+    20%, 11.22
+
 
 ## 删除控制字符
 删除如控制符：LF（换行）、CR（回车）、FF（换页）、DEL（删除）、BS（退格)、BEL（振铃）等。这一步也可以在分词的时候去做。这里不再去写。
