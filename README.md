@@ -11,6 +11,7 @@
 - [中文分词](tutorials/Chapter2/ChineseTokenizer.md)
 - [英文分词](tutorials/Chapter2/EnglishTokenizer.md)
 - [Truecase](tutorials/Chapter2/Truecase.md)
+- [BPE](tutorials/Chapter2/BPE.md)
 - [Wordpiece](tutorials/Chapter2/Wordpiece.md)
 - [SentencePiece](tutorials/Chapter2/SentencePiece.md)
 - [数据预处理示例](tutorials/Chapter2/Example.md)
